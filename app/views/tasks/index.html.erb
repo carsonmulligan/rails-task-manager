@@ -1,0 +1,11 @@
+<h1>Tasks#index</h1>
+<p>Find me in app/views/tasks/index.html.erb</p>
+
+<h2>You have created <%= @tasks.count %> tasks</h2>
+
+
+<ul class="Banner">
+  <% @tasks.each do |task| %>
+    <li><%= link_to task.title, task_path(task) %></li>
+  <%end%>
+</ul>
